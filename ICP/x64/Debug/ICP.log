@@ -1,0 +1,57 @@
+﻿生成启动时间为 2023/3/3 9:12:31。
+日志记录详细程度设置为: Normal。     1>项目“F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“x64\Debug\ICP.tlog\unsuccessfulbuild”执行 Touch 任务。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       WriteCudaCompileTlogs:
+       正在跳过目标“WriteCudaCompileTlogs”，因为所有输出文件相对于输入文件而言都是最新的。
+     1>项目“F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(1)正在节点 2 上生成“F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(1:2) (CudaBuildCore 个目标)。
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\WINDOWS\TEMP\tmp840e391c9dc7451c9e06e720b1515c03.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o F:\GAPS\train_project\ICP\code\ICP\x64\Debug\kernel.cu.obj "F:\GAPS\train_project\ICP\code\ICP\kernel.cu"
+         
+         F:\GAPS\train_project\ICP\code\ICP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o F:\GAPS\train_project\ICP\code\ICP\x64\Debug\kernel.cu.obj "F:\GAPS\train_project\ICP\code\ICP\kernel.cu" 
+         kernel.cu
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(261): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(398): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(565): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(573): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(578): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(636): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(655): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(690): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(759): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>F:\GAPS\train_project\ICP\code\ICP\kernel.cu(773): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>已完成生成项目“F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(CudaBuildCore 个目标)的操作。
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\GAPS\train_project\ICP\code\ICP\x64\Debug\ICP.exe" /INCREMENTAL /ILK:"x64\Debug\ICP.ilk" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib cudadevrt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\GAPS\train_project\ICP\code\ICP\x64\Debug\ICP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\GAPS\train_project\ICP\code\ICP\x64\Debug\ICP.lib" /MACHINE:X64 F:\GAPS\train_project\ICP\code\ICP\x64\Debug\kernel.cu.obj
+         ICP.vcxproj -> F:\GAPS\train_project\ICP\code\ICP\x64\Debug\ICP.exe
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\ICP.tlog\unsuccessfulbuild”。
+         正在对“x64\Debug\ICP.tlog\ICP.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+       “F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(Build 目标) (1) ->
+       “F:\GAPS\train_project\ICP\code\ICP\ICP.vcxproj”(CudaBuildCore 目标) (1:2) ->
+       (CudaBuildCore 目标) -> 
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(261): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(398): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(565): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(573): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(578): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(636): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(655): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(690): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(759): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         F:\GAPS\train_project\ICP\code\ICP\kernel.cu(773): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+
+    10 个警告
+    0 个错误
+
+已用时间 00:00:07.35
